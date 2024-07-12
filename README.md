@@ -105,9 +105,6 @@ conn = mysql.connector.connect(
 输出
 脚本将输出指定天数内，内存平均利用率小于指定阈值的主机列表，并显示每个主机的平均内存利用率和最大内存利用率。
 
-许可证
-该项目遵循 MIT 许可证。
-
 
 
 # Zabbix Host Group Memory Utilization Query Script
