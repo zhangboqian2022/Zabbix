@@ -42,9 +42,9 @@ args = parser.parse_args()
 
 # 连接到数据库
 conn = mysql.connector.connect(
-    host='127.0.0.1',        # 替换为你的数据库主机名或IP地址
-    user='zabbix',      # 替换为你的数据库用户名
-    password='zabbix',  # 替换为你的数据库密码
+    host='IP地址',        # 替换为你的数据库主机名或IP地址
+    user='数据库用户名',      # 替换为你的数据库用户名
+    password='数据库密码',  # 替换为你的数据库密码
     database='zabbix'
 )
 
