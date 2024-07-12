@@ -29,14 +29,14 @@
 运行脚本前，请确保已正确配置数据库连接信息。
 
 ```bash
-python zabbix_memory_utilization.py <days> <hostgroup> <threshold>
+python check-server-v1.py <days> <hostgroup> <threshold>
 days: 查询的天数
 hostgroup: 主机组名称
 threshold: 内存平均利用率阈值（百分比）
 示例：
 
 
-python zabbix_memory_utilization.py 7 "Web Servers" 80.0
+python check-server-v1.py 7 "Web Servers" 80
 配置
 在脚本中设置数据库连接信息：
 
@@ -83,14 +83,14 @@ conn = mysql.connector.connect(
 运行脚本前，请确保已正确配置数据库连接信息。
 
 ```bash
-python zabbix_memory_utilization.py <days> <hostgroup> <threshold>
+python check-server-v1.py <days> <hostgroup> <threshold>
 days: 查询的天数
 hostgroup: 主机组名称
 threshold: 内存平均利用率阈值（百分比）
 示例：
 
 
-python zabbix_memory_utilization.py 7 "Web Servers" 80.0
+python check-server-v1.py 7 "Web Servers" 80
 配置
 在脚本中设置数据库连接信息：
 
