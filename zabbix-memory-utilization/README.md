@@ -161,3 +161,33 @@ Output
 The script will output a list of hosts with an average memory utilization below the specified threshold within the specified number of days, showing each host's average and maximum memory utilization.
 
 
+### 更新后的 README.md 内容（ v1.1 版本说明）
+
+
+版本更新 v1.1 版本说明
+
+在 v1.1 版本中，增加了一个新功能，用于统计内存利用率超过指定阈值的次数。具体更新如下：
+
+增加了一个命令行参数 max_exceed_count，用于指定内存利用率超过阈值的最大次数。
+
+脚本现在可以输出在指定天数内，内存平均利用率低于指定阈值且超过阈值次数小于指定次数的主机列表。
+
+更新后的使用示例：
+
+
+python3 check-server-v1.1.py <days> <hostgroup> <threshold> <max_exceed_count>
+days: 查询的天数
+hostgroup: 主机组名称
+threshold: 内存平均利用率阈值（百分比）
+max_exceed_count: 超过阈值的最大次数
+示例：
+
+
+python3 check-server-v1.1.py 30 'Zabbix servers' 40 10
+这个命令将查询过去 30 天内内存平均利用率低于 40% 且超过 40% 的次数少于 10 次的主机列表。
+
+
+
+
+
+
